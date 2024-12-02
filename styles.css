@@ -1,0 +1,142 @@
+
+body,  h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.destinations {
+    padding: 2rem 0;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 30%;
+    margin: 1rem 0;
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.card h3 {
+    margin: 1rem 0;
+    transition: color 0.3s ease; 
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    transition: color 0.3s ease; 
+}
+
+
+.card:hover {
+    border-color: #ff6f61; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.05); 
+}
+.card:hover img {
+    transform: scale(1.1); 
+}
+
+.card:hover h3, .card:hover p {
+    color: #ff6f61; 
+}
+
+
+
+.about, .contact {
+    padding: 2rem 0;
+    background: #fff;
+    text-align: center;
+}
+
+.about p, .contact p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
